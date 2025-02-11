@@ -129,7 +129,7 @@ main {
     justify-content: center;
 }
 
-
+.content-section_e,
 .content-section {
     max-width: 100rem;
     margin: 3rem auto;
@@ -145,6 +145,7 @@ main {
     background: rgb(255, 255, 255);
 }
 
+.content-section_e h2,
 .content-section_s h2,
 .content-section h2 {
     display: flex;
@@ -160,6 +161,14 @@ main {
     justify-content: center;
     font-size: 1.5rem;
     padding-left: 1.5rem;
+}
+
+.content-section_e ul {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: 10rem;
 }
 
 .content-section_s a {
