@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav>
-            <h2 ><a href="#About" class="logo">Peter's Home Page</a></h2>
+            <h2 ><a href="#Home" class="logo">Peter's Home Page</a></h2>
             <ul class="menu-items">
                 <li>
                     <a href="#About">About Me</a>
@@ -20,8 +20,12 @@
                 <li>
                     <a href="#Education">Education</a>
                 </li>
-                <li>
-                    <a href="#Hoby">Hoby</a>
+                <li class="dropdown">
+                    <a href="#Hoby">Hobby ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#Game">Gaming</a></li>
+                        <li><a href="#Music">Music</a></li>
+                    </ul>
                 </li>
             </ul>
             <div class="cta-btns">
@@ -55,14 +59,28 @@
 
         <section id="About" class="content-section">
             <h2>About Me</h2>
-            <ul>I am currently studying Computer Science at Simon Fraser University. I enjoy solving problems, building projects, and learning new technologies.</ul>
+            <ul class = "paragraph_text">I am currently studying Computer Science at Simon Fraser University. I enjoy solving problems, building projects, and learning new technologies.</ul>
         </section>
 
         <section id="Resume" class="content-section_s">
             <h2>Resume</h2>
-            <a href="https://www.linkedin.com/in/xu-peter-a60782313/"  class="cta-btns">
+            <a href="https://www.linkedin.com/in/xu-peter-a60782313/" class = "resume_link">
                 View my Linkedin For My Resume!(There is not yet)
             </a>
+            <ul>Here is a brief summary of me:</ul>
+            <ul>Programming Languages:</ul>
+            <p>Python, Java, C++, HTML, CSS, JavaScript</p>
+            <ul>My personal project:</ul>
+            <a href="https://github.com/jxa94/jxa94.github.io" class = "text_link">
+                My Personal Website(This)
+            </a>
+            <p>(Hope there will be at least 2nd at end of ths year)</p>
+            <ul>My Skills:</ul>
+            <p>Mandrine(First Language)</p>
+            <p>English(Second Language)</p>
+            <p>Japanese(N5 level I think)</p>
+            <p>Piano(I know how to press those keys)</p>
+            <p>(Maybe more in future)</p>
         </section>
         
         <section id="Education" class="content-section_e">
@@ -75,22 +93,19 @@
             </ul>
         </section>
 
-        <section id="hobbies" class="content-section_s">
+        <section id="Hoby" class="content-section_h">
             <h2>Hobbies</h2>
             <div class="hobby-grid">
-                <!-- Hobby 1 -->
-                <div class="hobby-item">
+                <div id = "Game" class="hobby-item">
                     <h3>Gaming</h3>
                     <p>I enjoy playing video games, especially RPGs and strategy games.</p>
                 </div>
-        
-                <!-- Hobby 2 -->
+
                 <div class="hobby-item">
                     <h3>Photography</h3>
                     <p>Capturing landscapes and cityscapes during my travels.</p>
                 </div>
         
-                <!-- Video 1 -->
                 <div class="hobby-video">
                     <video controls>
                         <source src="" type="video/mp4">
@@ -98,7 +113,6 @@
                     </video>
                 </div>
         
-                <!-- Video 2 -->
                 <div class="hobby-video">
                     <video controls>
                         <source src="" type="video/mp4">

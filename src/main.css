@@ -1,6 +1,4 @@
 /* main.css */
-
-/* Reset some default browser styles */
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
@@ -57,12 +55,14 @@ nav{
     gap: 1rem;
 }
 
+.dropdown-menu li a,
 .menu-items li a {
     font-size: 1.2rem;
     color: hsl(0, 0%, 50%);
     transition: color 0.3s;
     text-decoration: none;
 }
+.dropdown-menu li a:hover,
 .menu-items li a:hover {
     color:Black;
 }
@@ -96,6 +96,29 @@ li {
     color: hsl(0, 0%, 50%);
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background:  rgba(224, 227, 255, 0.77);
+    border-radius: 5px;
+    min-width: 100px;
+    left: -20px; 
+    padding: 5px 0;
+}
+
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .About_Me_title{
     font-size: 2.5rem;
     margin: 1rem 0;
@@ -103,6 +126,7 @@ li {
     justify-content: space-between;
 
 }
+
 .About_Me_title_text{
     font-size: 1.5rem;
     margin: 1rem 0;
@@ -134,6 +158,7 @@ main {
 
 }
 
+.content-section_h,
 .content-section_s {
     max-width: 100rem;
     margin: 3rem auto;
@@ -141,6 +166,7 @@ main {
     background: rgb(255, 255, 255);
 }
 
+.content-section_h h2,
 .content-section_e h2,
 .content-section_s h2,
 .content-section h2 {
@@ -151,15 +177,7 @@ main {
     color: #333;
 }
 
-.content-section_s ul,
-.content-section ul {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-.content-section_e ul {
+.content-section_h h3 {
     display: flex;
     justify-content: flex-start;
     font-size: 1.5rem;
@@ -167,17 +185,57 @@ main {
     margin-left: 10rem;
 }
 
-.content-section_s a {
+.content-section_h p {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    margin-left: 10rem;
+}
+
+.content-section_s ul,
+.content-section ul,
+.content-section_e ul {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.content-section_s p{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: 15rem;
+    margin-right: 10rem;
+}
+
+.text_link,
+.resume_link {
+    display: flex;
     padding-left: 1.5rem;
     font-size: 1.2rem;
     transition: color 0.3s;
     text-decoration: none;
     transition: transform 0.3s;
 }
+.resume_link{
+    justify-content: center;
+}
+.text_link{
+    justify-content: flex-start;
+    padding-right: 1.5rem;
+    margin-left: 15rem;
+    margin-right: 10rem;
+}
 
-.content-section_s a:hover {
+.text_link:hover,
+.resume_link:hover {
     color:Black;
     transform: scale(1.2);
 }

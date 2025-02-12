@@ -65,6 +65,11 @@
     }
   }
 
+/**
+ * ----------------------------------------
+ * animation swing-in-top-fwd
+ * ----------------------------------------
+ */
  @-webkit-keyframes swing-in-top-fwd {
     0% {
       -webkit-transform: rotateX(-100deg);
@@ -97,19 +102,27 @@
       opacity: 1;
     }
   }
-
-  .Selfpic {
+  
+  .Selfpic,
+  .rotate-in-2-cw {
 	-webkit-animation: rotate-in-2-cw 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 	        animation: rotate-in-2-cw 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 }
 
+.content-section_e,
+.content-section_s,
+.content-section,
 .About_Me_title_text,
-.About_Me_title {
+.About_Me_title,
+.tracking-in-expand {
 	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s alternate both;
 	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s alternate both;
 }
 
-nav {
+nav,
+.swing-in-top-fwd {
 	-webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
 	        animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
 }
+
+//Thanks to Animista for the animations
