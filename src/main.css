@@ -6,10 +6,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
     padding: 0;
 }
 
-figure{
-
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -49,7 +45,7 @@ nav{
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-right: 1rem;
     color: Black;
     text-decoration: none;
@@ -101,7 +97,7 @@ li {
 }
 
 .About_Me_title{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
     display: flex;
     justify-content: space-between;
