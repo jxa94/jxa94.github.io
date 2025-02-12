@@ -181,3 +181,24 @@ main {
     color:Black;
     transform: scale(1.2);
 }
+
+.music-player {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+#toggle-btn {
+    background: Black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#toggle-btn:hover {
+    background: #2575fc;
+}

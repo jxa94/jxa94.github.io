@@ -24,8 +24,12 @@
                     <a href="#Hoby">Hoby</a>
                 </li>
             </ul>
-            <div class="cta-btns">  
-                <object height="50" width="50" data="audio/しずかに.flac"></object>
+            <div class="cta-btns">
+                <button id="toggle-btn">⏸</button>
+                <audio id="audio-player" autoplay>
+                    <source id="audio-source" src="" type="audio/flac">
+                    Your browser does not support the audio element.
+                </audio>
                 <a href="https://github.com/jxa94" class="cta-btns">
                     <img src = "image/giticon.png" alt = "GitIcon">
                 </a>
@@ -104,5 +108,53 @@
             </div>
         </section>
 
+
+        <script>
+        //This Part Is For The Music Player
+        //By ChatGPT
+        const songs = [
+            "audio/aquarium,eyes,.mp3",
+            "audio/chairsx.mp3",
+            "audio/décalcomanie noisex.mp3",
+            "audio/doublelead,girls,v.mp3",
+            "audio/flute,girls,ii.mp3",
+            "audio/Kadenz,.mp3",
+            "audio/lesson roomx.mp3",
+            "audio/secret,green,steps.mp3",
+            "audio/secret,love,steps.mp3",
+            "audio/seesaw,.mp3",
+            "audio/seesaw,.mp3",
+            "audio/stereo,bright,curve.mp3",
+            "audio/surround,test tubes.mp3",
+            "audio/tonesx.mp3",
+            "audio/wind,glass,bluebird.mp3",
+            "audio/wind,glass,girls.mp3",
+        ];
+
+        const audioPlayer = document.getElementById("audio-player");
+        const audioSource = document.getElementById("audio-source");
+        const toggleBtn = document.getElementById("toggle-btn");
+
+        function playRandomSong() {
+            const randomIndex = Math.floor(Math.random() * songs.length);
+            audioSource.src = songs[randomIndex];
+            audioPlayer.load();
+            audioPlayer.play();
+        }
+
+        window.addEventListener("load", playRandomSong);
+
+        audioPlayer.addEventListener("ended", playRandomSong);
+
+        toggleBtn.addEventListener("click", () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                toggleBtn.textContent = "⏸";
+            } else {
+                audioPlayer.pause();
+                toggleBtn.textContent = "▶";
+            }
+        });
+    </script>
     </body>
 </html> 
