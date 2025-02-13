@@ -260,3 +260,19 @@ main {
 #toggle-btn:hover {
     background: #2575fc;
 }
+
+.hobby-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+    max-width: 80rem;
+}
+
+.hobby-video iframe {
+    width: 100%;
+    max-width: 720px;
+    height: 405px;
+}
