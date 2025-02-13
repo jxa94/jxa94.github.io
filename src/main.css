@@ -78,13 +78,21 @@ nav{
     gap: 1rem;
     justify-content: flex-end;
 }
+.hob-btns{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+}
 
+.hob-btns img,
 .cta-btns img {
     width: 3rem;
     height: 3rem;
     transition: transform 0.3s;
 }
 
+.hob-btns img:hover,
 .cta-btns img:hover {
     transform: scale(1.2);
 }
