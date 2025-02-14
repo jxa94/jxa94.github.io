@@ -272,6 +272,11 @@ main {
 .hobby-video iframe {
     width: 100%;
 }
+.hobby-video iframe {
+    max-width: 720px;
+    height: 405px;
+}
+
 #toggle-btn,
 #backToTop {
     position: fixed;
