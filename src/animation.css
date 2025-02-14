@@ -184,6 +184,7 @@ nav,
 	        animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
 }
 
+#Simage:hover,
 #toggle-btn:hover,
 #backToTop:hover,
 .vibrate-1 {
