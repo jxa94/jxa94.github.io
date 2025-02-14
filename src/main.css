@@ -268,10 +268,9 @@ main {
     max-width: 80rem;
 }
 
+.content-section_e img,
 .hobby-video iframe {
     width: 100%;
-    max-width: 720px;
-    height: 405px;
 }
 #toggle-btn,
 #backToTop {
